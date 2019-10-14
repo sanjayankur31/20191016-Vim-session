@@ -87,6 +87,7 @@ Command history: :code:`q:`
 References
 ===========
 
+- https://www.gnu.org/software/gtypist/
 - vimtutor
 - :help motion
 - https://vim.rtorr.com/
