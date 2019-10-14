@@ -7,7 +7,12 @@ Part 1: The Vim way: design, concepts, usage
 =============================================
 
 In this part, we use Vim without any plug-ins. The idea is to show how Vim is
-meant to be used in its standard form. Stuff we'll look at:
+meant to be used in its standard form.
+
+:code:`gvim -u NONE`
+
+Then remember to use :code:`:set showcmd` so we can see the key-presses.
+
 
 Vim modes
 ##########
@@ -25,6 +30,8 @@ Simple cursor movement
 Designed for `touch-typing <https://en.wikipedia.org/wiki/Touch_typing>`__.
 
 Open a new file, try out these commands in normal mode: :code:`h, j, k, l, Ctrl f, Ctrl b, ctrl u, ctrl d, gg, G, H, M, L, 0, $, ^, zz, (, ), {, }`.
+
+Searching: :code:`/, ?, n, N`.
 
 Command construction
 #####################
@@ -56,9 +63,26 @@ Combined commands: :code:`cw, 3cW, c$, C`.
 More text objects
 #################
 
-:code:`aw, iw, as, is, ap, ip, a", i", a', i', a\`, i\``.
+:code:`aw, iw, as, is, ap, ip, a", i", a', i', a), i), a}, i}, a], i]`.
 
 Combine with :code:`d, c`, for example.
+
+
+Insert mode!
+############
+
+Write, exit.
+
+Some short-cuts too:
+
+:code:`ctrl w, ctrl h, ctrl u`
+
+
+Command/Last line mode
+#######################
+
+:code:`:..`, for example: :code:`:help, :w, :q, :wq` and lots more.
+Command history: :code:`q:`
 
 References
 ===========
