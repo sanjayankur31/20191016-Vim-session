@@ -13,6 +13,10 @@ meant to be used in its standard form.
 
 Then remember to use :code:`:set showcmd` so we can see the key-presses.
 
+Download a test file to try out these commands. For example, this document, or
+the `GNU GPLv3 license text <https://www.gnu.org/licenses/gpl-3.0.txt>`__ for a
+longer one.
+
 
 Vim modes
 ##########
