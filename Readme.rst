@@ -88,6 +88,16 @@ Command/Last line mode
 :code:`:..`, for example: :code:`:help, :w, :q, :wq` and lots more.
 Command history: :code:`q:`
 
+Practising
+===========
+
+Use daily. If there's something you want to do, search---someone has probably
+already solved your query.
+
+Try `vimgolf <http://www.vimgolf.com/>`__ when you are bored. Lots of fun
+exercises, and lots to learn.
+
+
 References
 ===========
 
