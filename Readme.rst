@@ -87,6 +87,8 @@ Command history: :code:`q:`
 References
 ===========
 
+- vimtutor
+- :help motion
 - https://vim.rtorr.com/
 - https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
-- :help motion
+- https://vimawesome.com/
