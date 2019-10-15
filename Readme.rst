@@ -21,12 +21,16 @@ longer one.
 Vim modes
 ##########
 
+These are a few of the available modes in VIM.
+Please look at :code:`help vim-modes-intro` for a complete description.
+
 1. Normal mode: default mode where you should be if you are not editing text.
 2. Insert mode: only be in this if you are editing text. As soon as you finish,
    go back to Normal mode.
-3. Last line mode/command mode: this is where we write Vim commands.
+3. Last line mode/command line mode: this is where we write Vim commands.
+4. Visual mode: for selecting text. :code:`:help visual-mode`
 
-Beginner's note: use :code:`u` to undo.
+Beginner's note: use :code:`u` in Normal mode to undo any changes.
 
 Simple cursor movement
 ########################
@@ -87,6 +91,70 @@ Command/Last line mode
 
 :code:`:..`, for example: :code:`:help, :w, :q, :wq` and lots more.
 Command history: :code:`q:`
+
+Buffers, windows (views), tabs (layouts)
+#########################################
+
+Yes, VIM does windows and layouts, but you probably don't need them.
+
+Buffers: are files that are in memory. Open a new file with :code:`e`. Open as many files as you wish---they all open as buffers.
+Buffer related commands :code:`:ls, :bnext, :bprev`. You can even add another file to the buffer list without loading it: :code:`:badd`. Delete a buffer with :code:`:bdel`.
+Other tricks: :code:`ctrl ^` switches between the most recently used buffer.
+
+Windows are viewports where buffers can be opened. A buffer may be opened in as
+many viewports as you wish. Try: :code:`vsplit, split`.
+
+Tabs are not really tabs---they are layouts. In each layout, you can arrange
+your viewports. So these come in handy when you are working on different
+projects, for example. They are not designed to be used the way tabs in
+web-browsers work, even though you can use them that way.
+
+- https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
+- https://stackoverflow.com/questions/26708822/why-do-vim-experts-prefer-buffers-over-tabs
+
+
+Folding, indenting, syntax highlighting, completion
+####################################################
+
+:code:`z` looks like a fold, so :code:`zo, zc, zO, zC` and so on.
+
+There are different indentation modes, and more can be added using plug-ins.
+Same for syntax highlighting.
+
+There's built in completion: :code:`ctrl n, ctrl p, ctrl x ctrl o`.
+
+
+Part 2: Customising and adding plug-ins
+=========================================
+
+Now, we stop using Vanilla VIM and move to my set up. My vimrc file can be
+found here: https://github.com/sanjayankur31/vimfiles
+
+Install plug-ins using `vim-plug <https://github.com/junegunn/vim-plug>`__.
+Plug-ins live on Github and are able to extend VIM in multiple ways.
+Best to use vim-awesome to find a plug-in when you need one.
+
+Some suggested general plugins:
+
+- vim-fugitive
+- syntastic
+- YouCompleteMe
+- nerdcommenter
+- ctrlp.vim
+- auto-pairs
+- tagbar
+
+
+Also best not to customise from the start. Customise when needed. It is likely
+that someone tried it before and wrote up a solution.
+
+Demos
+######
+
+Python.
+LaTeX.
+Markdown.
+Rst.
 
 Practising
 ===========
